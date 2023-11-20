@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const lyricsContainer = document.getElementById("lyrics");
 
   function GetBottleNumberLyricFromNumeric(numOfBottles) {
-    if (numOfBottles == 0 || parseInt(numOfBottles) == NaN)
+    if (numOfBottles == 0 || isNaN(parseInt(numOfBottles)))
       return "No more bottles";
     else {
       const bootleString = numOfBottles > 1 ? "bottles" : "bottle";
